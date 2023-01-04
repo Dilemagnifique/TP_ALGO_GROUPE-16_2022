@@ -60,6 +60,8 @@ class nouvelleformegeometrique():
     def nouveauperimetre(self):
         return(self.nouvelleforme.perimetre())
 
-    Cr=cercle(8)
-    print("la surface du cercle est",Cr.surface())
-    print("le perimetre du cercle est",Cr.perimetre())
+    olivier=cercle(8)
+    print("la surface du cercle est", olivier.surface())
+    print("le perimetre du cercle est", olivier.perimetre())
+    kabangu = carre(9)
+    print("la surface du carré est de ", kabangu.surface())
