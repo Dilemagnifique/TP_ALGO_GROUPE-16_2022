@@ -6,8 +6,8 @@ Created on Tue Jan  3 15:16:32 2023
         LABULU IBAM Danny
         ONKETU ANTEMBA Beni
        KABANGU MWATA Olivier
-"""
-"""RESOLUTION 1"""
+       """
+"""RESOLUTION1"""
 
 from abc import ABCMeta, abstractmethod #importation du module abc qui gère les classes abstraites
 from math import pi, sqrt #importation des fonctions pi et sqrt depuis math
@@ -59,17 +59,17 @@ class Cercle(Geo_Form):
 #classe Triangle qui herite de la classe mère Geo_Form 
 class Triangle(Geo_Form):
     try:
-        def __init__(self,nomF, CA,CB,CC):
+        def __init__(self,nomF, cotéA,cotéB,cotéC):
             self.nomF = nomF
-            self.CB = CB
-            self.CA = CA
-            self.CC = CC
+            self.cotéB = cotéB
+            self.cotéA = cotéA
+            self.cotéC = cotéC
         def perimetre(self):
-            return self.CB + self.CA + self.CC
+            return self.cotéB + self.cotéA + self.cotéC
 
         def surface(self):
             p = self.perimetre()/2
-            aire = sqrt(p*(p - self.CA)*(p - self.CB)*(p - self.CC))
+            aire = sqrt(p*(p - self.cotéA)*(p - self.cotéB)*(p - self.cotéC))
             aire = aire.real
             return aire
     except:
@@ -100,12 +100,12 @@ class TriangleRectangle(Triangle):
 class GeoFig():  
     try:
         def __init__(self):
-            self.LGeo_rep = []
+            self.EGeo_rep = []
         def add(self, fig):
-            self.LGeo_rep.append(fig)
+            self.EGeo_rep.append(fig)
         def decris_toi(self):
-            for L in self.LGeo_rep:
-                print("Resultat de la figure{}\nle Perimetre est de : {}m\nla Surface est de : {} u.s".format(L.nomF, L.perimetre(), L.surface()))
+            for L in self.EGeo_rep:
+                print("Resultat de la figure{}\nle Perimetre est de : {}m\nla Surface est de : {} u.s".format(E.nomF, E.perimetre(), E.surface()))
     except:
         print("Parametres non pris en charge")
         
