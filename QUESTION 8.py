@@ -3,7 +3,7 @@
 """
 Created on Mon Jan  4 21:30:43 2023
 
-@author: GROUPE 16,  
+@author: GROUPE 16.  
 """
 
 from abc import ABCMeta, abstractmethod

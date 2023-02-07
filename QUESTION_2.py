@@ -32,6 +32,6 @@ class triangle(formegeometrique):
         return(self.cotéa*self.hauteur/2)
     def perimetre(self):
         return(self.CA+self.CB+self.CC)
-K=triangle(2,6,9,5)
-print("la surface de triangle est de ",K.surface(),"u.s")
+
+
 

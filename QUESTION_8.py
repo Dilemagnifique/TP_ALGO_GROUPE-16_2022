@@ -1,16 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Jan  3 15:16:32 2023 
-@author: 
-    Groupe16 :
-        LABULU IBAM Danny
-        ONKETU ANTEMBA Beni
-       KABANGU MWATA Olivier
-"""
-"""SOLUTION 8"""
+
 from abc import ABCMeta, abstractmethod
 from math import pi, sqrt
-
 class Geo_Form(metaclass = ABCMeta):
     @abstractmethod
     def perimetre():
@@ -22,8 +13,8 @@ class Geo_Form(metaclass = ABCMeta):
         
 class Rectangle(Geo_Form):
     try:
-        def __init__(self,nomf, longueur, largeur):
-            self.nomf = nomf
+        def __init__(self,nomF, longueur, largeur):
+            self.nomF = nomF
             self.longueur = longueur
             self.largeur = largeur
         def perimetre(self):
@@ -36,8 +27,8 @@ class Rectangle(Geo_Form):
 
 class Cercle(Geo_Form):  
     try:
-        def __init__(self, nomf, rayon):
-            self.nomf = nomf
+        def __init__(self, nomF, rayon):
+            self.nomF = nomF
             self.rayon = rayon
         def perimetre(self):
             return 2*pi*self.rayon
@@ -48,17 +39,17 @@ class Cercle(Geo_Form):
 
 class Triangle(Geo_Form):
     try:
-        def __init__(self,nomf, CA,CB,CC):
-            self.nomf = nomf
-            self.CB = CB
-            self.CA = CA
-            self.CC = CC
+        def __init__(self,nomF, coteA,coteB,coteC):
+            self.nomF = nomF
+            self.coteB = coteB
+            self.coteA = coteA
+            self.coteC = coteC
         def perimetre(self):
             return self.coteB + self.coteA + self.coteC
 
         def surface(self):
             p = self.perimetre()/2
-            aire = sqrt(p*(p - self.CA)*(p - self.CB)*(p - self.CC))
+            aire = sqrt(p*(p - self.coteA)*(p - self.coteB)*(p - self.coteC))
             aire = aire.real
             return aire
     except:
@@ -87,9 +78,14 @@ class GeoFig():
         
     except:
         print("Parametres non pris en charge")
-#utilisation du polymorphisme
+
 def tout_perimetre(obj):
     return obj.perimetre()
 
 def tout_superficie(obj):
     return obj.surface()
+    
+def decris_toi(obj):
+    print("Je suis {} \nMon perimetre : {} \nMa surface : {}".format(obj.nomF, tout_perimetre(obj) ,tout_superficie(obj)))
+
+    

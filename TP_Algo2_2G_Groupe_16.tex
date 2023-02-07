@@ -1,0 +1,149 @@
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[french]{babel}
+\usepackage{graphics}
+\author{Danny LABULU}
+\usepackage{pifont}
+\usepackage{fancyhdr}
+
+
+\fancyfoot[L]{\thepage}
+\pagestyle{plain}
+\usepackage{times}
+\usepackage{titlesec}
+\usepackage[thmmarks,amsmath]{ntheorem}
+{%
+	\theoremnumbering{arabic}
+	\theorembodyfont{\normalfont}
+ 	
+	\newtheorem{Qu}{}
+		
+}
+{%
+	\theoremnumbering{arabic}
+	\theorembodyfont{\normalfont}
+	
+	\newtheorem{Q}{}
+	
+}
+
+\titleformat{\section}
+[hang]%
+{\centering
+	\Large\bfseries\fontsize{12pt}{14pt}\selectfont}%
+{\thesection.}%
+{}%
+{} %changement de font
+\titlespacing*{\subsection}%
+{} %retrait a gauche
+{2.3ex plus 0.2ex}%espace avant
+{2.3ex plus 0.2ex} % espace après
+%subsection
+\begin{document}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\begin{titlepage}
+	\vspace{3cm}
+	\begin{center}
+		
+		\begin{Large}
+			UNIVERSITE DE KINSHASA\\
+		\end{Large}
+	\vspace{0.5cm}
+	\includegraphics[scale=0.6]{logo_unikin.png}\\
+		FACULTE POLYTECHNIQUE\\ 
+		\vspace{1cm}
+		\textit{DEPARTEMENT DE GENIE ELECTRIQUE ET INFORMATIQUE}\\
+		\vspace{2cm}
+		\HRule\\[0.5cm]
+		{\Large\bfseries{TRAVAIL PRATIQUE DU COURS D'ALGORITHMIQUE ET PROGRAMMATION}} \\[0.5cm]
+		\HRule\\[0.5cm]
+	\end{center}
+\vspace{3cm}
+	\begin{center}
+		\textit{Par :} \\
+		\textbf{LABULU IBAM DANNY  (2GEI)}\\
+		\textbf{ \text{  }KABANGU MWATA OLIVIER (2GC)}\\
+		\textbf{ONKETU ANTEMBA BENI  (2GC)}\\ % Nom auteur
+	\end{center}
+\vspace{1cm}
+\begin{flushright}
+	Dirigé par l'assistant  \textbf{Gaël  MOBISA}
+\end{flushright}
+	\begin{center}
+		\vspace{3.5cm}
+		\textit{Année académique 2021-2022}
+	\end{center}
+\end{titlepage}
+	\section*{QUESTIONS}
+	\begin{Qu}
+		Qu'est ce qu'un algorithme ?
+	\end{Qu}
+\begin{Qu}
+	Qu'est ce qu'un algorithme efficace ?
+\end{Qu}
+\begin{Qu}
+	Que pouvez-vous dire à propos de l'efficacité d'un algorithme ?
+\end{Qu}
+\begin{Qu}
+	Citer quelques unes des techniques de conception d'un algorithme ?
+	
+\end{Qu}
+\begin{Qu}
+	Commentez en quelques phrases les techniques de conception des algorithmes suivantes: la méthode de la force brute, la méthode gloutonnne, la méthode de diviser pour regner, la méthode probabiliste, la méthode de la programmation dynamique. 
+\end{Qu}
+\begin{Qu}
+	Qu'est ce qu'un pseudo-code? Qu'est ce qu'un ordinogramme? De quelle autre façon peut-on présenter un algorithme?
+	\end{Qu}
+\begin{Qu}
+	Pour quelles raisons une équipe de développeurs de logiciels choisit-elle de représenter les algorithmes par du pseudo-code, des organigrammes ou des bouts des codes.
+\end{Qu}
+\begin{Qu}
+	En général pour un problème donné, on peut développer plusieurs algorithmes. Comment identifier le meilleur algorithme de cet ensemble ?
+\end{Qu}
+\begin{Qu}
+	En quoi consiste l'analyse d'un algorithme ?
+	
+\end{Qu}
+\begin{Qu}
+	Quelles sont les deux méthodes d'analyse d'un algorithme ?
+\end{Qu}
+\begin{Qu}
+	Quelles sont les incovenients de la méthode expérimentale ?
+\end{Qu}
+\begin{Qu}
+	En quoi consiste la méthode des opérations primitives ?
+\end{Qu}
+\begin{Qu}
+	Qu'est ce que la complexité d'un algorithme ?
+\end{Qu}
+\begin{Qu}
+	En quoi consiste la notation asymptotique ?
+\end{Qu}
+\begin{Qu}
+	Quelles sont les fonctions qui apparaissent le plus souvent lors de l'analyse théorique des algorithmes ?
+\end{Qu}
+\begin{Qu}
+	Quel est l'algorithme le plus efficace parmi un ensemble d'algorithmes permettant de résoudre un problème ?
+\end{Qu}
+\begin{Qu}
+	Pour évaluer expérimentalement un algorithme, on doit lui implementer et lui fournir des entrées différentes question de mésurer le temps d'exécution correspondant à chaque entrée. C'est en dessinant la courbe du temps d'exécution en focntion de la taille de l'entrée que l'on peut identifier la fonction correspondant à l'évolution du temps d'exécution en fonction de la taille d'entrée. La notion de la taille d'une entrée est très importante. pourriez-vous la définir en quelques mots et donner quelques exemples de taille d'entrée pour des problèmes simples.
+\end{Qu}
+\begin{Qu}
+	Dans l'analyse d'un algorithme on distingue généralement le cas le plus défavorable, le cas le plus favorable et le cas moyen(probabiliste). Expliquez en quoi consiste chaque cas. Pourquoi le cas  le plus  défavorable à une importance particulière ?
+\end{Qu}
+\begin{Qu}
+	Définir en quelques mots le concept de récursivité.
+\end{Qu}
+\begin{Qu}
+	En quoi,consiste la recursivité linéaire, la recursivité binaire et la recursivité multiple.
+\end{Qu}
+\begin{Qu}
+	De quelle façon un problème récursif doit-il pouvoir se définir ? Donnez un exemple.
+\end{Qu}
+\newpage
+\end{document}
