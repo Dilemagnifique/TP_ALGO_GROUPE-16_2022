@@ -3,7 +3,7 @@
 """
 Created on Mon Jan  2 23:30:43 2023
 
-@author:GROUPE 16
+@author: Danny LABULU,OLIVIER KABANGU 
 """
 from abc import ABC, abstractmethod
 from math import pi

@@ -7,7 +7,7 @@ Created on Tue Jan  3 15:16:32 2023
         ONKETU ANTEMBA Beni
        KABANGU MWATA Olivier
 """
-"""SOLUTION 8"""
+"""REPONSE 8"""
 from abc import ABCMeta, abstractmethod
 from math import pi, sqrt
 
